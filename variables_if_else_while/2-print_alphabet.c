@@ -1,7 +1,11 @@
 #include <stdio.h>
 
 /**
- * Description: Using putchar to print the alphabet
+ * main - Entry point
+ *
+ * Description: Using putchar to print the alphabet.
+ *
+ * Return: Always 0 (indicating successful program execution)
  */
 
 int main(void)
