@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/**
+ * Description: Using putchar to print the alphabet
+ */
+
 int main(void)
 {
 	char letter;
