@@ -1,8 +1,14 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <studio.h>
 
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Description: Prints if n is postive, negative, or zero.
+ *
+ * Return: Always 0 (indicating a succesful program execution)
+ */
 int main(void)
 {
 	int n;
@@ -10,13 +16,13 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if( n > 0 ) {
-		printf("n is positive");
+		printf("n is positive\n");
 	}
-	if( n = 0 ) {
-		printf("n is zero");
+	else if( n = 0 ) {
+		printf("n is zero\n");
 	}
-	if( n < 0 ) {
-		printf("n is negative");
+	else( n < 0 ) {
+		printf("n is negative\n");
 	}
 	return (0);
 }
