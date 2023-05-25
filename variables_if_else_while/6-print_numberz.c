@@ -10,14 +10,15 @@
 
 int main(void)
 {
-	char number;
+	int n = 0;
 
-	for (number = '0'; number <= '9'; number++)
+	while (n <= '9')
 	{
-		putchar(number);
+		putchar(n);
+		n++;
 	}
 
-	putchar('\n');
+	putchar ('\n');
 
 	return (0);
 }
