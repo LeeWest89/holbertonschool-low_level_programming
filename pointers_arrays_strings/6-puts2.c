@@ -8,19 +8,19 @@
 void puts2(char *str)
 {
 	int s = 0;
-	int a = -1;
+	int a = 1;
 
 	while (str[s] != '\0')
 	{
+		a = !a
 		s++;
-		if (a == -1)
-		a = s;
-
-		while (str[a] != '\0')
-		{
-			_putchar(str[a]);
-			a += 2;
-		}
+	}
+		s = 0;
+	while (str[s] != '\0')
+	{
+		if (a)
+		_putchar(str[s]);
+		s++;
 	}
 
 	_putchar('\n');
