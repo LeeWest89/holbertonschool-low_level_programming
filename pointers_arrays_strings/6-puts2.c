@@ -13,7 +13,7 @@ void puts2(char *str)
 	while (str[s] != '\0')
 	{
 		s++;
-		a = s
+		a = s;
 
 		while (str[a] != '\0')
 		{
