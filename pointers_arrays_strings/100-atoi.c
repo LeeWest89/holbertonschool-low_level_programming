@@ -19,7 +19,7 @@ int _atoi(char *s)
 			a *= -1;
 		if (s[c] >= '0' && s[c] <= '9')
 		{
-			if (b > INT_MAX / 10 || (result == INT_MIN / 10 && (s[c] - '0') > INT_MAX % 10))
+			if (b > INT_MAX / 10 || b == INT_MIN / 10 && (s[c] - '0') > INT_MAX % 10))
 			{
 				if (a == 1)
 					return INT_MAX;
