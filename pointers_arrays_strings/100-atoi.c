@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <limits.h>
 /**
  * _atoi - Makes a string and integer
  * @s: The string to convert
