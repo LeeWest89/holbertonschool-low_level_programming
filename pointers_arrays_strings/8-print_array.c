@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_ array - prints the number associated with the array.
+ * print_array - prints the number associated with the array.
  * @a: the array
  * @n: the number from the array
  */
