@@ -18,7 +18,7 @@ char *leet(char *str)
 		{'l', '1'},
 	};
 
-	for (a = 0; str[a] != '\0'; i++)
+	for (a = 0; str[a] != '\0'; a++)
 	{
 		for (b = 0; b < 5; b++)
 		{
