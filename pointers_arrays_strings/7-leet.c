@@ -1,25 +1,33 @@
 #include "main.h"
 
 /**
- * string_toupper - converts lowercase letters to uppercase letters in a string
- * @str: the string to convert
+ * leet - encodes sting into leet
+ * @str: the string to encode
  *
- * Return: pointer to converted string.
+ * Return: pointer to string.
  */
 
-char *cap_string(char *str)
+char *leet(char *str)
 {
-	int a;
+	int a, b;
+	char l[5][2] = {
+		{'a', '4'},
+		{'e', '3'},
+		{'o', '0'},
+		{'t', '7'},
+		{'l', '1'},
+	};
 
-	for (a = 0; str[a] != '\0'; a++)
+	for (a = 0; str[a] != '\0'; i++)
 	{
-		if (a == 0 ||str[a - 1] == ' ' || str[a - 1] == '\t' || str[a - 1] =='\n' || str[a - 1] == ',' || str[a - 1] == ';' || str[a - 1] == '.' || str[a - 1] '!' || str[a - 1] == '?' || str [a - 1] == '"' || str [a - 1] '(' || str [a - 1] == ')' || str[a - 1] '{' || str[a - 1] '}')
+		for (b = 0; b < 5; b++)
 		{
-
-		if (str[a] >= 'a' && str[a] <= 'z')
-			str[a] = str[a] - ('a' - 'A');
+			if (str[a] == l[b][0] || str[a] == l[b][0] - 'a' + 'A')
+			{
+				str[a] = l[b][1];
+				break;
+			}
 		}
-		
 	}
 
 	return (str);
