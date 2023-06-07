@@ -7,19 +7,17 @@
  * Return: pointer to converted string.
  */
 
-char *cap_string(char *str)
+char *string_toupper(char *str)
 {
-	int a;
+	int a = 0;
 
-	for (a = 0; str[a] != '\0'; a++)
+	while (str[a] != '\0')
 	{
-		if (a == 0 ||str[a - 1] == ' ' || str[a - 1] == '\t' || str[a - 1] =='\n' || str[a - 1] == ',' || str[a - 1] == ';' || str[a - 1] == '.' || str[a - 1] '!' || str[a - 1] == '?' || str [a - 1] == '"' || str [a - 1] '(' || str [a - 1] == ')' || str[a - 1] '{' || str[a - 1] '}')
-		{
-
 		if (str[a] >= 'a' && str[a] <= 'z')
+		{
 			str[a] = str[a] - ('a' - 'A');
 		}
-		
+		a++;
 	}
 
 	return (str);
