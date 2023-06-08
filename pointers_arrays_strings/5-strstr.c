@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stddef>
+#include <stddef.h>
 
 /**
  * _strstr - checks string for certain substring
