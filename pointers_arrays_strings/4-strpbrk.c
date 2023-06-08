@@ -21,8 +21,11 @@ char *_strpbrk(char *s, char *accept)
 				return (s);
 		}
 
+		{
+
 			if (s[a] != accept[b])
 				return (NULL);
+		}
 
 	}
 
