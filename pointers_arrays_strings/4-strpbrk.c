@@ -19,7 +19,7 @@ char *_strpbrk(char *s, char *accept)
 			if (s[a] == accept[b])
 				return (s + a);
 
-			else if (s[a] == '\0')
+			else if (s[a] != accept[b])
 				return (NULL);
 		}
 	}
