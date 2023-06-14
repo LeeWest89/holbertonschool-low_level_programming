@@ -9,12 +9,12 @@
  */
 int _a(int n, int b)
 {
-	int _a = b * b
+	int a = b * b;
 
-	if (_a > n)
+	if (a > n)
 		return (-1);
 
-	if (_a == n)
+	if (a == n)
 		return (b);
 
 	return (_a(n, b + 1));
