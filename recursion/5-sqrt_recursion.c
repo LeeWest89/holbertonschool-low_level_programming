@@ -1,18 +1,6 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - returns square root of a number
- * @n: the number
- *
- * Return: -1 if n does not have a square root or the square root of n
- */
-
-int _sqrt_recursion(int n)
-{
-	return (_a(n, 1));
-}
-
-/**
  * _a - square root
  * @n: the number
  * @b: the iterate number
@@ -32,3 +20,15 @@ int _a(int n, int b)
 	return (_a(n, b + 1));
 
 }
+
+/**
+ * _sqrt_recursion - returns square root of a number
+ * @n: the number
+ *
+ * Return: -1 if n does not have a square root or the square root of n
+ */
+
+int _sqrt_recursion(int n)
+{
+	return (_a(n, 1));
+
