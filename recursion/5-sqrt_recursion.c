@@ -9,20 +9,26 @@
 
 int _sqrt_recursion(int n)
 {
-	int a, i;
-
-	{
-		int a = i * i;
-
-		if (a > n)
-			return (-1);
-
-		if (a == n)
-			return (i);
-
-		return (i + 1);
-	}
-
-	return (i);
+	return (_a(n, 1));
 }
 
+/**
+ * _a - square root
+ * @n: the number
+ * @b: the iterate number
+ *
+ * Return: square root
+ */
+int _a(int n, int b)
+{
+	int _a = b * b
+
+	if (_a > n)
+		return (-1);
+
+	if (_a == n)
+		return (b);
+
+	return (_a(n, b + 1));
+
+}
