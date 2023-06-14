@@ -1,5 +1,4 @@
 #include "main.h"
-#include "3-factorial.c"
 
 /**
  * _pow_recursion - multiples x to the recursion of y
@@ -22,7 +21,7 @@ int _pow_recursion(int x, int y)
 		return (x * 1);
 	}
 
-	return (x * factorial(x, y - 1));
+	return (x * _pow_recursion(x, y - 1));
 
 
 }
