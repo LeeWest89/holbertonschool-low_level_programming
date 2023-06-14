@@ -22,7 +22,7 @@ int _pow_recursion(int x, int y)
 		return (x * 1);
 	}
 
-	return (x * factorial(y - 1));
+	return (x * factorial(x, y - 1));
 
 
 }
