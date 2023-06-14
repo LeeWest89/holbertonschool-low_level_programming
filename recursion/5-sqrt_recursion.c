@@ -20,9 +20,9 @@ int _sqrt_recursion(int n)
 		if (a == n)
 			return (i);
 
-		return (a(n, i + 1));
+		return (i + 1);
 	}
 
-	return (a(n, 1));
+	return (i);
 }
 
