@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
 	int b = sizeof(c) / sizeof(c[0]);
 	int d = 0;
 	int e;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
