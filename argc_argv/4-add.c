@@ -23,12 +23,14 @@ int main(int argc, char *argv[])
 		printf("%d\n", sum);
 	}
 
-	else if (atoi(argv[a]) < 0)
+	else if (argc > 1)
 	{
-		a = 0;
-		a++;
-		printf("Error\n");
-		return (1);
+		for (a = 1, a < argc; a++)
+		{
+			if (atoi(argv[a]) < 0)
+			printf("Error\n");
+			return (1);
+		}
 	}
 	return (0);
 }
