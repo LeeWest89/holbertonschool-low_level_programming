@@ -18,7 +18,11 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
+	int c[] = {25, 10, 5, 2, 1};
+	int b = sizeof(c) / sizeof(c[0]);
+	int d = 0;
 	int a = atoi(argv[1]);
+	int e;
 
 	if (a < 0)
 	{
@@ -26,11 +30,8 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	int c[] = {25, 10, 5, 2, 1};
-	int b = sizeof(c) / sizeof(c[0]);
-	int d = 0;
 
-	for (int e = 0; e < b; e++)
+	for (e = 0; e < b; e++)
 	{
 		d += a / c[e];
 		a %= c[e];
