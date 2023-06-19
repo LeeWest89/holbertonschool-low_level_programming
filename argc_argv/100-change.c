@@ -30,10 +30,10 @@ int main(int argc, char *argv[])
 	int b = sizeof(c) / sizeof(c[0]);
 	int d = 0;
 
-	for (e = 0; e < b; e++)
+	for (int e = 0; e < b; e++)
 	{
 		d += a / c[e];
-		a %= c[e]
+		a %= c[e];
 	}
 
 	printf("%d\n", d);
