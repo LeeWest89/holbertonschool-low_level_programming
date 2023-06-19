@@ -25,6 +25,8 @@ int main(int argc, char *argv[])
 
 	else if (atoi(argv[a]) < 0)
 	{
+		a = 0;
+		a++
 		printf("Error\n");
 		return (1);
 	}
