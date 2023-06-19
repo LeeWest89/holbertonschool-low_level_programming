@@ -12,17 +12,17 @@
 
 int main(int argc, char *argv[])
 {
+	int a, c[] = {25, 10, 5, 2, 1};
+	int b = sizeof(c) / sizeof(c[0]);
+	int d = 0;
+	int e;
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
 
-	int a = atoi(argv[1]);
-	int c[] = {25, 10, 5, 2, 1};
-	int b = sizeof(c) / sizeof(c[0]);
-	int d = 0;
-	int e;
+	a = atoi(argv[1]);
 
 	if (a < 0)
 	{
