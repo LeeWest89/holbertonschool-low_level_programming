@@ -11,10 +11,12 @@
 
 int main(int argc, char *argv[])
 {
-	int a = argv[1], b = argv[2];
+	int a, b;
 
 	if (argc == 3)
 	{
+		a = argv[1];
+		b = argv[2];
 		printf("%d\n", a * b);
 	}
 
