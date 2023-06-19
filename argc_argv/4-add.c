@@ -7,30 +7,24 @@
  * @argc: argument counter.
  * @argv: argument vector.
  *
- * Return: 0 on success.
+ * Return: 0 on success or 1 on an Error
  */
 
 int main(int argc, char *argv[])
 {
-	int a, sum = 0;
+	int a, b, sum = 0;
 
-	if (argc > 1)
+	for (a = 1; a < argc, a++)
 	{
-		for (a = 1; a < argc; a++)
+		for (b = 0; argv[a][b]; b++)
 		{
-			sum += atoi(argv[a]);
+			if (argv[a][b] < '0' || argv[a][b] > '9')
+				printf("Error\n");
+				return (1);
 		}
-		printf("%d\n", sum);
+
+		sum += atoi(argv[a]);
 	}
 
-	else if (argc > 1)
-	{
-		for (a = 1; a < argc; a++)
-		{
-			if (atoi(argv[a]) < '0' || (atoi(argv[a]) >= 'a' && atoi(argv[a]) <= 'z'))
-			printf("Error\n");
-			return (1);
-		}
-	}
 	return (0);
 }
