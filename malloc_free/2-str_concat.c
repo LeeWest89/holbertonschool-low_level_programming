@@ -30,6 +30,7 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	d = size1 + size2;
+	printf("%d\n", d);
 	e = malloc((1 + d) * sizeof(char));
 
 	if (e == NULL)
