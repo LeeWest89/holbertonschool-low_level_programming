@@ -29,9 +29,7 @@ char *str_concat(char *s1, char *s2)
 		size2 = 0;
 	}
 
-
 	d = size1 + size2;
-
 	e = malloc((1 + d) * sizeof(char));
 
 	if (e == NULL)
@@ -49,10 +47,8 @@ char *str_concat(char *s1, char *s2)
 			e[c] = s2[b];
 			b++;
 		}
-
 		c++;
 	}
-
 	e[c] = '\0';
 	return (e);
 }
