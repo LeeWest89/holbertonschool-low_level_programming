@@ -17,10 +17,12 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	for (; str[a]; a++)
+	while (str[a])
+	{
+		a++
+	}
 
 	c = malloc(sizeof(char) * (a + 1));
-	printf("%d/n", a);
 
 	if (c == NULL)
 		return (NULL);
