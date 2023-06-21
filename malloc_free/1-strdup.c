@@ -14,7 +14,7 @@ char *_strdup(char *str)
 	int a = 1, b = 0;
 	char *c;
 
-	if (*str == NULL)
+	if (str == NULL)
 		return (NULL);
 
 	for (; str[a]; a++)
