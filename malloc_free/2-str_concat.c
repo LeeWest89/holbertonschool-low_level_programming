@@ -21,7 +21,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		size1 = 0;
 	}
-
 	else
 		(size1 = strlen(s1));
 
@@ -29,7 +28,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		size2 = 0;
 	}
-
 	else
 		(size2 = strlen(s2));
 
@@ -45,7 +43,6 @@ char *str_concat(char *s1, char *s2)
 		{
 			e[c] = s1[c];
 		}
-
 		if (c >= size1)
 		{
 			e[c] = s2[b];
