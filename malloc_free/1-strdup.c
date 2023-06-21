@@ -6,7 +6,7 @@
  * _strdup - duplicates the string
  * @str: the string
  *
- * Return: NULL if string is NULL, on success returns pointer to duplicate string.
+ * Return: NULL if str is NULL, on success returns pointer to duplicate string.
  */
 
 char *_strdup(char *str)
