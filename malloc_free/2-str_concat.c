@@ -17,8 +17,6 @@ char *str_concat(char *s1, char *s2)
 	int size1 = strlen(s1), size2 = strlen(s2);
 	char *e;
 
-	d = size1 + size2;
-
 	if (s1 == NULL)
 	{
 		s1 = "";
