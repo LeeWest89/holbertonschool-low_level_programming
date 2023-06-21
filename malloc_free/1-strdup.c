@@ -14,14 +14,14 @@ char *_strdup(char *str)
 	int a = 1, b = 0;
 	char *c;
 
-	if ((*str) = '\0')
+	if (*str == '\0')
 		return (NULL);
 
 	for (; str[a]; a++)
 
 	c = malloc((sizeof(char) * a) + 1);
 
-	if ((*c) = '\0')
+	if (*c == NULL)
 		return (NULL);
 
 	for (; b < a; b++)
@@ -31,9 +31,4 @@ char *_strdup(char *str)
 
 	c[b] = '\0';
 	return (c);
-
-
-
-
-
 }
