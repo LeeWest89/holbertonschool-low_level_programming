@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 
 	while (c < d)
 	{
-		if (c <= ai)
+		if (c <= a)
 		{
 			e[c] = s1[c];
 			a++;
