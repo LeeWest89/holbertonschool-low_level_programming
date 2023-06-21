@@ -18,10 +18,10 @@ char *str_concat(char *s1, char *s2)
 	char *e;
 
 	if (s1 == NULL)
-		size1 == "";
+		s1 = "";
 
 	if (s2 == NULL)
-		size2 == "";
+		s2 = "";
 	e = malloc(1 + (d * sizeof(char)));
 
 	if (e == NULL)
@@ -43,6 +43,6 @@ char *str_concat(char *s1, char *s2)
 		c++;
 	}
 
-	e[c] = '\0';
+	e[c] = NULL;
 	return (e);
 }
