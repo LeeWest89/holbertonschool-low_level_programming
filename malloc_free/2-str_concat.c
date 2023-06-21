@@ -13,7 +13,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int a = 0, b = 0, c = 0, size1 = strlen(s1), size2 = strlen(s2), d = size1 + size2;
+	int a = 0, b = 0, c = 0; 
+	int size1 = strlen(s1), size2 = strlen(s2), d = size1 + size2;
 	char *e;
 
 	if (s1 == NULL)
@@ -26,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 	if (e == NULL)
 		return (NULL);
 
-	while ( c < d)
+	while (c < d)
 	{
 		if (c <= a)
 			e[c] = s1[c];
