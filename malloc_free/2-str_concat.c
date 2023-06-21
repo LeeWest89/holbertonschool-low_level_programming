@@ -29,13 +29,13 @@ char *str_concat(char *s1, char *s2)
 
 	while (c < d)
 	{
-		if (c <= a)
+		if (c < a)
 		{
 			e[c] = s1[c];
 			a++;
 		}
 
-		if (c > a)
+		if (c >= a)
 		{
 			e[c] = s2[b];
 			b++;
