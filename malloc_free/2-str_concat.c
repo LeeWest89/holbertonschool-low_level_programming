@@ -13,7 +13,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int a = 0, b = 0, c = 0;
+	int b = 0, c = 0;
 	int size1 = strlen(s1), size2 = strlen(s2), d = size1 + size2;
 	char *e;
 
@@ -34,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 			e[c] = s1[c];
 		}
 
-		if (c => size1)
+		if (c >= size1)
 		{
 			e[c] = s2[b];
 			b++;
