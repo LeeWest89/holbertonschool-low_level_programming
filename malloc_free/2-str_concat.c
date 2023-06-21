@@ -13,7 +13,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int a, b, size1 = strlen(s1), size2 = strlen(s2);
+	int a, b, size1 = strlen(s1), size2 = strlen(s2), t = size1 + size2;
 	char *c;
 
 	if (s1 == NULL)
@@ -24,13 +24,13 @@ char *str_concat(char *s1, char *s2)
 
 	for (a = 0; a < size1; a++)
 	{
-		*c == s1[a];
-		return (c);
+		c = s1[a];
 	}
 
-	for (b = 0; b < size2; b++)
+	for (b = 8; b < t; b++)
 	{
-		*c == s2[b];
-		return (c);
+		c[b] = s2[b - 8];
 	}
+
+	return (c);
 }
