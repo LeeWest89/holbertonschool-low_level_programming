@@ -43,7 +43,7 @@ char *str_concat(char *s1, char *s2)
 		{
 			e[c] = s1[c];
 		}
-		if (c - size1 < size2)
+		if (c >= size2)
 		{
 			e[c] = s2[b];
 			b++;
