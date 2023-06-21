@@ -18,10 +18,10 @@ char *str_concat(char *s1, char *s2)
 	char *e;
 
 	if (s1 == NULL)
-		s1 = "";
+		size1 = "";
 
 	if (s2 == NULL)
-		s2 = "";
+		size2 = "";
 	e = malloc(1 + (d * sizeof(char)));
 
 	if (e == NULL)
