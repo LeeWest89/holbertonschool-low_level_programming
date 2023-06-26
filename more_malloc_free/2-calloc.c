@@ -7,12 +7,13 @@
  * @nmemb: the elements of the array
  * @size: the size of the array
  *
- * Return: the pointer
+ * Return: the pointer or NULL for 0 of failure
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *a;
+	unsigned int b, c;
 
 	if (nmemb == 0)
 		return (NULL);
@@ -24,6 +25,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (a == 0)
 		return (NULL);
+
+	b = a;
+
+	for (c = 0; c < (size * nmemb); c++)
+		b[c] = '\0';
 
 	return (a);
 }
