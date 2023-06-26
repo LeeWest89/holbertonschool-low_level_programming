@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /*
- * main - prints the name of the file it was compiled from, and a new line.
+ * main - point of entry for the program
+ * prints the name of the file it was compiled from, and a new line.
  *
  * Returns: Always 0
  */
