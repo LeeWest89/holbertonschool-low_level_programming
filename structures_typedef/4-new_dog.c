@@ -1,4 +1,5 @@
-#include "libmy.a"
+#include "2-strlen.c"
+#include "9-strcpy.c"
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
