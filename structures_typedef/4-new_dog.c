@@ -1,6 +1,7 @@
 #include "2-strlen.c"
 #include "9-strcpy.c"
 #include "dog.h"
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
