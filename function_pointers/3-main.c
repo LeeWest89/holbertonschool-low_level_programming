@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /**
- * main - entry point for the program
+ * main - prints the result of the function
  * @argc: the number of arguments
  * @argv: an array of pointer to arguments
  *
- * Returns: 0 on success
+ * Return: 0 on success
  */
 int main(int argc, char *argv[])
 {

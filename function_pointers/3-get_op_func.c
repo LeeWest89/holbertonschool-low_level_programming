@@ -5,7 +5,7 @@
  * get_op_func - a pointer to the function that corresponds to the operator
  * @s: operator passed as argument to the program
  *
- * Returns: pointer to the the operator for the matchin function
+ * Return: pointer to the the operator for the matchin function
  */
 
 int (*get_op_func(char *s))(int, int)
