@@ -1,4 +1,4 @@
-#include <libmy.a>
+#include "libmy.a"
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
