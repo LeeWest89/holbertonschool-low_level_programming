@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 	if ((*o == '/' && b == 0) || (*o == '%' && b == 0))
 	{
 		printf("Error\n");
-		exit(100):
+		exit(100);
 	}
 
 	printf("%d\n", get_op_func(o)(a, b));
