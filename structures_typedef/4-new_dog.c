@@ -16,7 +16,8 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int n = 0, o = 0, *dog;
+	dog_t *dog;
+	int n, o;
 
 	if (name != NULL && owner != NULL)
 	{
