@@ -7,7 +7,7 @@
  * @argc: the number of arguments
  * @argv: an array of pointer to arguments
  *
- * Returns: 0
+ * Returns: 0 on success
  */
 int main(int argc, char *argv[])
 {
