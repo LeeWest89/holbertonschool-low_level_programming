@@ -8,7 +8,7 @@
  * Returns: pointer to the the operator for the matchin function
  */
 
-int (*get_op_func(char *s))(int, int);
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
