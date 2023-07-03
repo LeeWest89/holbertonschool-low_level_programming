@@ -10,7 +10,7 @@
 
 typedef struct print_a
 {
-	char *symbol;
+	char symbol;
 	void (*print)(va_list arg);
 
 } print_a;
