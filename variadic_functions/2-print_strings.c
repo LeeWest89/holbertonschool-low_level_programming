@@ -12,7 +12,7 @@
  * Return: if separator is NULL print nothing, otherwise print string or nil is string is NULL
  */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list a;
 
