@@ -30,7 +30,7 @@ void print_all(const char * const format, ...)
 	{
 		h = 0;
 
-		while (h < 4 && format[g] != fs[h].symbol)
+		while (h < 4 && format[g] != *fs[h].symbol)
 			h++;
 
 		if (h < 4)
