@@ -15,16 +15,17 @@ int sum_them_all(const unsigned int n, ...)
 {
 	va_list a;
 
+	int b = 0, int c;
+
 	va_start(a, n);
 
-	int b = a;
-	int c  = va_arg(a, int);
-
-	while (c != 0)
+	while (c < n)
 	{
-		b += c;
-		c + va_arg(a, int);
+		b += va_arg(a, int);
+		c++;
 	}
+
 	va_end(a);
+
 	return (b);
 }
