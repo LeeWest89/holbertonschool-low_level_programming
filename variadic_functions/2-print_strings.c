@@ -9,7 +9,8 @@
  * @n: number of strings
  * @...: the strings
  *
- * Return: if separator is NULL print nothing, otherwise print string or nil is string is NULL
+ * Return: if separator is NULL print nothing, otherwise print 
+ * 		string or nil is string is NULL
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -17,18 +18,21 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list a;
 
 	unsigned int b = 0;
+	char *c;
 
 	va_start(a, n);
 
 	while (b < n)
 	{
-		printf("%d", va_arg(a, int));
+		c = va_arg(c, char *);
 
 		if (separator != NULL && b != (n - 1))
 			printf("%s", separator);
 
-		if (separator == NULL)
+		if (c == NULL)
 			printf("(nil)");
+		else
+			printf("%s", c);
 
 		b++;
 	}
