@@ -32,7 +32,7 @@ void print_all(const char * const format, ...)
 
 		while (h < 4 && format[g] != fs[h].symbol)
 			h++;
-		
+
 		if (h < 4)
 		{
 			printf("%s", sep);

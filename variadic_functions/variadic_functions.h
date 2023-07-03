@@ -1,5 +1,12 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
+#include <stdarg.h>
+
+/**
+ * struct print_a - new type to define a printer
+ * @symbol: the data type
+ * @print: function pointer to function to print data type
+ */
 
 typedef struct print_a
 {

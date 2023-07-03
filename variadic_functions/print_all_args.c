@@ -8,49 +8,49 @@
  * @arg: the argument to print
  */
 
-void print_char (va_list arg)
+void print_char(va_list arg)
 {
 	char a;
-	
+
 	a = va_arg(arg, int);
 	printf("%c", a);
 }
 
 /**
- * print_char - prints a integer
+ * print_int - prints a integer
  * @arg: the argument to print
  */
 
-void print_int (va_list arg)
+void print_int(va_list arg)
 {
 	int b;
-	
+
 	b = va_arg(arg, int);
 	printf("%d", b);
 }
 
 /**
- * print_char - prints a float
+ * print_float - prints a float
  * @arg: the argument to print
  */
 
-void print_float (va_list arg)
+void print_float(va_list arg)
 {
 	float e;
-	
+
 	e = va_arg(arg, double);
 	printf("%f", e);
 }
 
 /**
- * print_char - prints a string
+ * print_string - prints a string
  * @arg: the argument to print
  */
 
-void print_string (va_list arg)
+void print_string(va_list arg)
 {
 	char *d;
-	
+
 	d = va_arg(arg, char *);
 
 	if (d == NULL)
