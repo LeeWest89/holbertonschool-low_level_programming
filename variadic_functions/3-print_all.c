@@ -5,13 +5,16 @@
 #include <stdarg.h>
 
 /**
+ * print_all - prints anything
+ * @format: a string with different typs of arguments
+ * @...: Number of arguments to be printed
  */
 
 void print_all(const char * const format, ...)
 {
 	va_list args;
 
-	int g = 0, int h;
+	int g = 0, int h = 0;
 	char *sep;
 
 	print_a fs[] = {

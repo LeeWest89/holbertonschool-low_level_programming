@@ -26,7 +26,7 @@ void print_int (va_list arg)
 	int b;
 	
 	b = va_arg(arg, int);
-	printf("%d", i);
+	printf("%d", b);
 }
 
 /**
@@ -53,7 +53,7 @@ void print_string (va_list arg)
 	
 	d = va_arg(arg, char *);
 
-	if (str == NULL)
+	if (d == NULL)
 		printf("(nil)");
 
 	printf("%s", d);
