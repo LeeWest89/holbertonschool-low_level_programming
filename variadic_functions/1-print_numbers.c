@@ -14,9 +14,23 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	if (separator == NULL)
-		return;
+	va_list a;
 
-	else
-		printf("%d/n", ...);
+	unsigned int b = 0;
+
+	va_start(a, n);
+
+	while (b < n)
+	{
+		printf("%d", va_arg(a, int));
+
+		if (separator != NULL)
+			printf("%s", separator);
+
+		b++;
+	}
+
+	printf("\n");
+
+	va_end(a);
 }
