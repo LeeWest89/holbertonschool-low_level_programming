@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 
-	int g = 0, int h = 0;
+	int g = 0, h = 0;
 	char *sep;
 
 	print_a fs[] = {
