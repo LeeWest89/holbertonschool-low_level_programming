@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * flip_bit - returns the number of bits you would need to flip
- * 	to get from one number to another
+ * flip_bits - returns the number of bits you would need to flip
+ *	to get from one number to another
  * @n: the number
  * @m: the number being flipped to
  *
@@ -18,5 +18,5 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		count += (mask & 1);
 		mask >>= 1;
 	}
-	return(count);
+	return (count);
 }
