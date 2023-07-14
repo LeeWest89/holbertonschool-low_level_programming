@@ -15,8 +15,8 @@ unsigned int binary_to_uint(const char *b)
 	for (a = length - 1; a >= 0; a--)
 	{
 		if (b[a] != '0' && b[a] != '1')
-			return (0);
-		
+			return (NULL);
+
 		if (b[a] == '1')
 			result += ptwo;
 
