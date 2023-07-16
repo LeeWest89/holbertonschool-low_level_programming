@@ -16,7 +16,10 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 
 	if (text_content != NULL)
-	for (a = 0; text_content[a]; a++)
+	{
+		for (a = 0; text_content[a]; a++)
+			write(o, text_content, a)
+	}
 
 	o = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 
