@@ -12,7 +12,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *alph;
-	int o, r, p;
+	int o, r, w;
 
 	alph = malloc(sizeof(char) * letters);
 	o = open(filename, O_RDONLY);
