@@ -48,8 +48,8 @@ void copying(const char *file1, const char *file2)
 	{dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", t);
 		exit(100);
 	}
-	close(file1);
-	close(file2);
+	close(o);
+	close(t);
 }
 
 /**
