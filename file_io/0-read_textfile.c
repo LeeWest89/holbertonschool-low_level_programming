@@ -12,11 +12,12 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *alph;
+	int o, r, p;
 
 	alph = malloc(sizeof(char) * letters);
-
-	int o = open(filename, O_RDONLY), r = read(o, alph, letters);
-	int w = write(STDOUT_FILENO, alph, r);
+	o = open(filename, O_RDONLY);
+	r = read(o, alph, letters);
+	w = write(STDOUT_FILENO, alph, r);
 
 	if (filename == NULL)
 		return (0);
