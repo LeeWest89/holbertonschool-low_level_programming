@@ -12,7 +12,7 @@ void copying(const char *file1, const char *file2)
 {
 	char buff[1024];
 	int o = open(file1, O_RDONLY);
-	int t = open(file2, O_CREAT | O_WRONLY | TRUNC, 0664);
+	int t = open(file2, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	int r = read(o, buff, 1024);
 
 	if (r == -1)
