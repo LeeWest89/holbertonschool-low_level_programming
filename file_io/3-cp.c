@@ -13,21 +13,14 @@ void copying(const char *file1, const char *file2)
 	char buff[1024];
 	int o = open(file1, O_RDONLY);
 	int t = open(file2, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	int r = read(o, buff, 1024);
+	int r;
 
-	if (r == -1)
+	if (o == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file1);
 		exit(98);
 	}
-
-	if (!file1 || o == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file1);
-		exit(98);
-	}
-
-	while (r > 0)
+	while ((r = read(o, buff, 1024))  > 0)
 	{
 		if (write(t, buff, r) != r || t == -1)
 		{
@@ -35,7 +28,16 @@ void copying(const char *file1, const char *file2)
 			exit(99);
 		}
 	}
-
+	if (t == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't open file %s\n", file2);
+		exit(99);
+	}
+	if (r == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file1);
+		exit(98);
+	}
 	if (close(o) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", o);
@@ -43,11 +45,11 @@ void copying(const char *file1, const char *file2)
 	}
 
 	if (close(t) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", t);
+	{dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", t);
 		exit(100);
 	}
-
+	close(file1);
+	close(file2);
 }
 
 /**
