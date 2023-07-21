@@ -9,7 +9,7 @@ void hash_table_delete(hash_table_t *ht)
 {
 	unsigned long int i = 0;
 	hash_node_t *node, *temp;
-	hash_table_t *h = ht
+	hash_table_t *h = ht;
 
 	for (; i < ht->size; i++)
 	{
