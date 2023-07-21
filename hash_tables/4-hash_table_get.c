@@ -23,9 +23,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (i >= ht->size)
 		return (NULL);
 
-	if (e == NULL)
-		return (NULL);
-
 	while (e && strcmp(key, e->key) != 0)
 		e = e->next;
 
