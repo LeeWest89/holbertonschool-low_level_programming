@@ -20,11 +20,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	i = key_index((unsigned char *) key, ht->size);
 	e = ht->array[i];
 
+	if (i >= ht->size)
+		return (NULL);
+
 	if (e == NULL)
 		return (NULL);
 
-	if (strcmp(key, e->key) == 0)
+	while (e && strcmp(key, e->key) != 0)
 		e = e->next;
 
-	return (e->value);
+	if (e != NULL)
+		return (e->value);
+	else
+		return (NULL);
 }
