@@ -24,7 +24,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (NULL);
 
 	if (strcmp(key, e->key) == 0)
-		e = e->next
+		e = e->next;
 
 	return (e->value);
 }
